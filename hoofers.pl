@@ -14,22 +14,22 @@ hoofer(Shikuo).
 hoofer(Ellen).
 
 %% can be ignored(?)
-hoofer(X) :- skier(X) ; mountain_climber(X) ; skier(X), mountain_climber(X).
+hoofer(X) :- skier(X) ; mountainclimber(X) ; skier(X), mountainclimber(X).
 
-likes(Tony, snow).
-likes(Tony, rain).
+likes(tony, snow).
+likes(tony, rain).
 
-likes(Tony, _) :- dislikes(Ellen, _).
-dislikes(Ellen, _) :- likes(Tony, _).
+likes(tony, _) :- dislikes(ellen, _).
+dislikes(ellen, _) :- likes(tony, _).
 
 skier(X) :- likes(X, snow).
-mountain_climber(X) :- dislikes(X, rain).
+mountainclimber(X) :- dislikes(X, rain).
 
 start() :-
 	write("Is there a member of the Hoofers Club who is a mountain climber but not a skier?"),
 	nl,
 	query_climber([Shikuo, Tony, Ellen]).
 
-query_climber([H|C]) :- ( mountain_climber(H) -> query_skier([H|C]), nl ; query_climber(C) ).
+query_climber([H|T]) :- ( mountainclimber(H) -> query_skier([H|T]), nl ; query_climber(T) ).
 
-query_skier([H|C]) :- ( skier(H) -> query_climber(C) ; write(H), nl ).
+query_skier([H|T]) :- ( skier(H) -> query_climber(T) ; write(H), nl ).
