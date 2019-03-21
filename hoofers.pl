@@ -30,6 +30,6 @@ start() :-
 	nl,
 	query_climber([Shikuo, Tony, Ellen]).
 
-query_climber([H|T]) :- ( mountainclimber(H) -> query_skier([H|T]), nl ; query_climber(T) ).
+query_climber([H|C]) :- ( mountainclimber(H) -> query_skier([H|C]), nl ; query_climber(C) ).
 
-query_skier([H|T]) :- ( skier(H) -> query_climber(T) ; write(H), nl ).
+query_skier([H|T]) :- ( skier(H) -> query_climber(C) ; write(H), nl ).
