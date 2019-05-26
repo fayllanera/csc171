@@ -1,4 +1,4 @@
-Steps on how to run the BFS 8-Tile Puzzle
+Steps on how to run the 8-Tile Puzzle
 
 1. Run the run.py  on cmd/pycharm:
 	
