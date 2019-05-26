@@ -11,6 +11,9 @@ Steps on how to run the 8-Tile Puzzle
 
 4. Intructions:
    
-   By clicking the "Solve" button below the tile, the puzzle will solve       itself.
-   On the other hand, the "Refresh" button will refresh the order of the    tiles after it was solve. Then you can click Solve again to solve the    newly ordered tiles.
-  Additionally, below the Solve and Refresh buttons, the user will be able to see the Run Time and the Number of Explored Nodes for both BFS and A*. 
+   By clicking the "Solve" button below the tile, the puzzle will solve itself.
+   On the other hand, the "Refresh" button will refresh the order of the tiles after it was solve. 
+   Then you can click Solve again to solve the newly ordered tiles.
+    
+   Additionally, below the Solve and Refresh buttons, the user will be able to see 
+    the Run Time and the Number of Explored Nodes for both BFS and A*. 
