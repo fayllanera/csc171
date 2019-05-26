@@ -1,0 +1,41 @@
+
+#8tiles {
+	margin: auto !important;
+}
+
+.tile {
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	color: white;
+	background-color: #2a6cd6;
+	font-family: 'calibri','serif'
+}
+
+.tile:hover {
+	color: white;
+	background-color: blue;
+}
+
+.blank {
+	background-color: white;
+}
+
+.blank:hover {
+	background-color: white;
+}
+
+#begin {
+	background-color: #85b3fc;
+	color: white;
+	font-size: 30px;
+	font-family: 'calibri','serif';
+}
+
+.container {
+
+padding-left: 500px;
+
+
+
+}
