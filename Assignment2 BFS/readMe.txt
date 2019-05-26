@@ -1,11 +1,8 @@
 Steps on how to run the BFS 8-Tile Puzzle
 
-1. Run the following pyhon files on cmd/pycharm:
+1. Run the run.py  on cmd/pycharm:
 	
-	bfs.py
-	state.py
-	run.py
-
+	
 2. After running each python files, click the localhost on the run.py file.
 	
 	localhost:5000
